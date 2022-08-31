@@ -177,9 +177,9 @@
       GC.SuppressFinalize(this);
     }
 
-    public static Text LoadFile(string filePath) => new(filePath);
+    public static Text LoadFileText(string filePath) => new(filePath);
 
-    public static Text LoadFile(string filePath, string lineDelimiter) => new(filePath, lineDelimiter);
+    public static Text LoadFileText(string filePath, string lineDelimiter) => new(filePath, lineDelimiter);
 
     public static bool Exists(string filePath) => File.Exists(filePath);
 
