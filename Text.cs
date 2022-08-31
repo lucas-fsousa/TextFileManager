@@ -185,7 +185,9 @@
 
     public static void Create(string filePath, string text) => File.WriteAllText(filePath, text);
 
-    public static string GetInTextFormmat(string filePath) => File.ReadAllText(filePath);
+    public static void Delete(string filePath) => File.Delete(filePath);
+
+    public static string Select(string filePath) => File.ReadAllText(filePath);
 
     public void Clear() => File.WriteAllText(_filePath, "");
 
