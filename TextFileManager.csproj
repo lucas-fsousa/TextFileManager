@@ -4,9 +4,9 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>
-    <Title>PublicUtility.MouseRun</Title>
+    <Title>PublicUtility.TextFileManager</Title>
     <Company>Lucas F Sousa</Company>
-    <Description>A helper for mouse manipulation involving clicks and movements.</Description>
+    <Description>It provides auxiliary methods for data processing via text document, ideal for local log files where information is needed to be identified precisely without harming the archiving flow.</Description>
     <PackageProjectUrl>https://github.com/lucas-fsousa/TextFileManager</PackageProjectUrl>
     <RepositoryUrl>https://github.com/lucas-fsousa/TextFileManager</RepositoryUrl>
     <PackAsTool>False</PackAsTool>
@@ -19,6 +19,14 @@
     <Copyright>Lucas Sousa. All rights reserved.</Copyright>
     <PackageId>PublicUtility.$(AssemblyName)</PackageId>
     <Version>1.0.0</Version>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
