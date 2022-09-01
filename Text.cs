@@ -177,9 +177,9 @@
       GC.SuppressFinalize(this);
     }
 
-    public static Text LoadFileText(string filePath) => new(filePath);
+    public static Text Load(string filePath) => new(filePath);
 
-    public static Text LoadFileText(string filePath, string lineDelimiter) => new(filePath, lineDelimiter);
+    public static Text Load(string filePath, string lineDelimiter) => new(filePath, lineDelimiter);
 
     public static bool Exists(string filePath) => File.Exists(filePath);
 
@@ -187,7 +187,7 @@
 
     public static void Delete(string filePath) => File.Delete(filePath);
 
-    public static string Select(string filePath) => File.ReadAllText(filePath);
+    public static string GetText(string filePath) => File.ReadAllText(filePath);
 
     public void Clear() => File.WriteAllText(_filePath, "");
 
@@ -219,8 +219,6 @@
     public void Delete(IList<int> multiLines) => DeleteText(new Filter(multiLines));
     
     public void Delete(int[] multilines) => DeleteText(new Filter(multilines));
-
-    public void Delete() => DeleteText();
 
     #endregion
 
