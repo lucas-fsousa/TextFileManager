@@ -4,7 +4,7 @@
     private readonly string _filePath;
     private readonly string _lineDelimiter;
 
-    public Text(string filePath, string lineDelimiter) {
+    private Text(string filePath, string lineDelimiter) {
       _filePath = filePath;
       _lineDelimiter = lineDelimiter;
 
